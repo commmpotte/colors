@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* Размер указывается в процентах от высоты вьюпорта (viewport height).
+     100vh соответствует полной высоте вьюпорта */
+  height: 100vh;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+.col {
+  flex: 1;
+  /* Тут центрируем наши кнопки и текст */
+  display: flex;
+  flex-direction: column;
+  /* Прсотранство сверху+снизу между эл-там */
+  justify-content: space-around;
+  align-items: center;
+}
+.col h2 {
+  /* Паддинги для интерактива */
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+.col h2:hover {
+  background: black;
+  cursor: pointer;
+}
+.col button {
+    outline: none;
+  border: none;
+  /* Чтобы у иконки был прозрачный бг */
+  background: transparent;
+  font-size: 1.5rem;
+  color: aliceblue;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+.col button:hover {
+  background: black;
+  cursor: pointer;
+}
